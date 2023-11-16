@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_observation_input.xml -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextObservationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Observation Title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextObservationTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Comments"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonCapturePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextComments"
+        android:layout_marginTop="16dp"
+        android:text="Capture Photo" />
+
+    <ImageView
+        android:id="@+id/imageViewCapturedPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/buttonCapturePhoto"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewCapturedPhoto"
+        android:layout_marginTop="16dp"
+        android:text="Submit" />
+
+</RelativeLayout>
+

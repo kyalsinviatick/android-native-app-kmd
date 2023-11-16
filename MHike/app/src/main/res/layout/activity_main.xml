@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".MainActivity">
+
+    <!-- Large Text "M-Hike" -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M-Hike"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <!-- Subtitle "A Hiker Management App" -->
+    <TextView
+        android:id="@+id/textViewSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Hiker Management App"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- ImageView for the custom image -->
+    <ImageView
+        android:id="@+id/imageViewCustom"
+        android:layout_width="393dp"
+        android:layout_height="247dp"
+        android:layout_below="@id/textViewSubtitle"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/hiking" />
+
+    <!-- Horizontal Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewCustom"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Button "Add Hike" -->
+        <Button
+            android:id="@+id/buttonAddHike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:text="Add Hike"/>
+
+        <!-- Button "View Hikes" -->
+        <Button
+            android:id="@+id/buttonViewHikes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:text="View Hikes"/>
+    </LinearLayout>
+</RelativeLayout>

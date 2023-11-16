@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/textViewDetailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/textViewDetailLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDetailName"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/textViewDetailDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDetailLocation"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <!-- Parking Status -->
+    <TextView
+        android:id="@+id/textViewDetailParkingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDetailDate"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <!-- Length -->
+    <TextView
+        android:id="@+id/textViewDetailLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDetailParkingStatus"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <!-- Difficulty -->
+    <TextView
+        android:id="@+id/textViewDetailDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDetailLength"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/textViewDetailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDetailDifficulty"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <!-- Elevation -->
+    <TextView
+        android:id="@+id/textViewDetailElevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDetailDescription"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <!-- Time To Complete -->
+    <TextView
+        android:id="@+id/textViewDetailTimeToComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDetailElevation"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <!-- Horizontal LinearLayout for Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textViewDetailTimeToComplete"
+        android:layout_marginTop="16dp">
+
+        <!-- Add Observation Button -->
+        <Button
+            android:id="@+id/buttonAddObservation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Observation" />
+
+        <!-- View Observation Button -->
+        <Button
+            android:id="@+id/buttonViewObservation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="View Observation" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

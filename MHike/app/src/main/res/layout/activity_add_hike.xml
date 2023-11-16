@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".AddHikeActivity">
+
+    <!-- Name Input Field -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewName"
+        android:layout_marginTop="2dp"
+        android:inputType="text"/>
+
+    <!-- Location Input Field -->
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="2dp"/>
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLocation"
+        android:layout_marginTop="2dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/dateOfHike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLocation"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <Button
+        android:id="@+id/datePickerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateOfHike"
+        android:layout_marginTop="8dp"
+        android:text="Select Date"
+        android:background="#FF4081"
+        android:textAllCaps="true" />
+
+    <!-- length Input Field -->
+    <TextView
+        android:id="@+id/textViewLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length of Hike(meter):"
+        android:layout_below="@id/datePickerButton"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editViewLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLength"
+        android:layout_marginTop="2dp"
+        android:inputType="text"/>
+
+    <!-- length Input Field -->
+    <TextView
+        android:id="@+id/textViewDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty:"
+        android:layout_below="@id/editViewLength"
+        android:layout_marginTop="2dp"/>
+
+    <EditText
+        android:id="@+id/editViewDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDifficulty"
+        android:layout_marginTop="2dp"
+        android:inputType="text"/>
+
+    <!-- Location Input Field -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:layout_below="@id/editViewDifficulty"
+        android:layout_marginTop="2dp"/>
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDescription"
+        android:layout_marginTop="2dp"
+        android:inputType="text"/>
+
+    <!-- Elevation Input Field -->
+    <TextView
+        android:id="@+id/textViewElevation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elevation(feet):"
+        android:layout_below="@id/editTextDescription"
+        android:layout_marginTop="2dp"/>
+
+    <EditText
+        android:id="@+id/editTextElevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewElevation"
+        android:layout_marginTop="2dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/textViewTimeToComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimeToComplete(Hour):"
+        android:layout_below="@id/editTextElevation"
+        android:layout_marginTop="2dp"/>
+
+    <EditText
+        android:id="@+id/editTextTimeToComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTimeToComplete"
+        android:layout_marginTop="2dp"
+        android:inputType="text"/>
+
+    <!-- Switch for a Toggle -->
+    <Switch
+        android:id="@+id/switchParkingToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTimeToComplete"
+        android:layout_marginTop="4dp"
+        android:text="Parking"/>
+
+    <!--     Button to Submit-->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchParkingToggle"
+        android:layout_marginTop="20dp"
+        android:text="Submit"/>
+</RelativeLayout>
